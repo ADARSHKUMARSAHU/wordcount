@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="alert alert-success alert-dismissible fade show" role="alert" class="container-fluid">
+    <strong>Welcome To TextUtiles</strong> Your Text has been analyzed
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="container">
+<h2>Your Analyzed text - {{ purpose }}</h2>
+
+<p>
+    <pre>Your Text is... {{txt}}</pre><br>
+    <pre>Result... {{ analyed_text }}</pre>
+</p>
+</div>
+
+{% endblock %}
